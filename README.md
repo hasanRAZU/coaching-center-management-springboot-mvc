@@ -1,6 +1,6 @@
-# Student Management System (Spring Boot MVC)
+# Coaching Center Management (Spring Boot MVC)
 
-A simple Student Management web application built using Spring Boot and Thymeleaf.  
+A coaching center management web application built using Spring Boot and Thymeleaf.  
 It demonstrates CRUD operations and basic enrollment features using in-memory data storage.
 
 ---
