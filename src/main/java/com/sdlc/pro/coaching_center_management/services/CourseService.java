@@ -1,7 +1,7 @@
-package com.sdlc.pro.student_management_app.services;
+package com.sdlc.pro.coaching_center_management.services;
 
-import com.sdlc.pro.student_management_app.model.Course;
-import com.sdlc.pro.student_management_app.repository.CourseRepository;
+import com.sdlc.pro.coaching_center_management.model.Course;
+import com.sdlc.pro.coaching_center_management.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,14 +1,12 @@
-package com.sdlc.pro.student_management_app.controller.mvc;
+package com.sdlc.pro.coaching_center_management.controller.mvc;
 
-import com.sdlc.pro.student_management_app.dto.StudentAddRequest;
-import com.sdlc.pro.student_management_app.services.CourseService;
-import com.sdlc.pro.student_management_app.services.StudentService;
+import com.sdlc.pro.coaching_center_management.dto.StudentAddRequest;
+import com.sdlc.pro.coaching_center_management.services.CourseService;
+import com.sdlc.pro.coaching_center_management.services.StudentService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller

@@ -1,7 +1,7 @@
-package com.sdlc.pro.student_management_app.controller.mvc;
+package com.sdlc.pro.coaching_center_management.controller.mvc;
 
-import com.sdlc.pro.student_management_app.dto.CourseAddRequest;
-import com.sdlc.pro.student_management_app.services.CourseService;
+import com.sdlc.pro.coaching_center_management.dto.CourseAddRequest;
+import com.sdlc.pro.coaching_center_management.services.CourseService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;

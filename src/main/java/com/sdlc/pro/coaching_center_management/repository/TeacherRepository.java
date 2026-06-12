@@ -1,7 +1,7 @@
-package com.sdlc.pro.student_management_app.repository;
+package com.sdlc.pro.coaching_center_management.repository;
 
-import com.sdlc.pro.student_management_app.model.Teacher;
-import com.sdlc.pro.student_management_app.services.TeacherService;
+import com.sdlc.pro.coaching_center_management.model.Teacher;
+import com.sdlc.pro.coaching_center_management.services.TeacherService;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

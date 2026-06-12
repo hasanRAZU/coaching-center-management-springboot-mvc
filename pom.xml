@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sdlc.pro</groupId>
-    <artifactId>student_management_app</artifactId>
+    <artifactId>coaching_center_management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>student_management_app</name>
     <description>student_management_app</description>

@@ -1,16 +1,14 @@
-package com.sdlc.pro.student_management_app.dto;
+package com.sdlc.pro.coaching_center_management.dto;
 
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
-public class StudentAddRequest {
+public class CourseAddRequest {
 
     @NotBlank
     private String name;
 }
-

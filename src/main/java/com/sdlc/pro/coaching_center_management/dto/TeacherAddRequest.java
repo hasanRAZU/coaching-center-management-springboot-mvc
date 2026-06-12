@@ -1,4 +1,4 @@
-package com.sdlc.pro.student_management_app.dto;
+package com.sdlc.pro.coaching_center_management.dto;
 
 
 import jakarta.validation.constraints.NotBlank;

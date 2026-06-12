@@ -1,28 +1,28 @@
-package com.sdlc.pro.student_management_app;
+package com.sdlc.pro.coaching_center_management;
 
-import com.sdlc.pro.student_management_app.repository.CourseRepository;
-import com.sdlc.pro.student_management_app.repository.StudentRepository;
-import com.sdlc.pro.student_management_app.repository.TeacherRepository;
+import com.sdlc.pro.coaching_center_management.repository.CourseRepository;
+import com.sdlc.pro.coaching_center_management.repository.StudentRepository;
+import com.sdlc.pro.coaching_center_management.repository.TeacherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentManagementAppApplication implements CommandLineRunner {
+public class CoachingCenterManagementApplication implements CommandLineRunner {
 
     private final StudentRepository studentRepository;
     private final TeacherRepository teacherRepository;
     private final CourseRepository courseRepository;
-    public StudentManagementAppApplication(StudentRepository studentRepository,
-                                           TeacherRepository teacherRepository,
-                                           CourseRepository courseRepository) {
+    public CoachingCenterManagementApplication(StudentRepository studentRepository,
+                                               TeacherRepository teacherRepository,
+                                               CourseRepository courseRepository) {
         this.studentRepository = studentRepository;
         this.teacherRepository = teacherRepository;
         this.courseRepository = courseRepository;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(StudentManagementAppApplication.class, args);
+        SpringApplication.run(CoachingCenterManagementApplication.class, args);
     }
 
     @Override

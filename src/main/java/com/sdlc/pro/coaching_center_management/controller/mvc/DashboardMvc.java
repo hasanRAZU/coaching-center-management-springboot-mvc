@@ -1,4 +1,4 @@
-package com.sdlc.pro.student_management_app.controller.mvc;
+package com.sdlc.pro.coaching_center_management.controller.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

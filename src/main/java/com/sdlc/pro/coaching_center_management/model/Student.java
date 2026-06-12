@@ -1,4 +1,4 @@
-package com.sdlc.pro.student_management_app.model;
+package com.sdlc.pro.coaching_center_management.model;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
