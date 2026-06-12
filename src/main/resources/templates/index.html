@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    Coaching Centre Dashboard
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Students</h2>
+        <p>Manage student records</p>
+        <a th:href="@{/students}">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>Teachers</h2>
+        <p>Manage teacher records</p>
+        <a th:href="@{/teachers}">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>Courses</h2>
+        <p>Manage courses</p>
+        <a th:href="@{/courses}">Open</a>
+    </div>
+
+</div>
+<!--<a href="/" style="display:block; margin-top:20px;">← Back to Dashboard</a>-->
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Students</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+
+    .btn {
+      background: #3498db;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+
+    .delete {
+      color: red;
+    }
+    .enroll {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container" >
+
+  <h2>Students</h2>
+
+  <a class="btn" th:href="@{/students/add}">+ Add Student</a>
+
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Current Courses</th>
+      <th>Action</th>
+      <th>Course Enrollment</th>
+    </tr>
+
+    <tr th:each="student : ${students}">
+      <td th:text="${student.id}"></td>
+      <td th:text="${student.name}"></td>
+      <td>
+        <div th:each="course : ${student.courses}"
+             th:text="${course}">
+        </div>
+      </td>
+      <td>
+        <a class="delete" th:href="@{'/students/delete/' + ${student.id}}">
+          Delete
+        </a>
+      </td>
+      <td>
+        <a class="enroll" th:href="@{'/students/enroll/' + ${student.id}}">
+          Enroll
+        </a>
+      </td>
+    </tr>
+  </table>
+
+
+  <div th:if="${message}" style="color: green;">
+    <p th:text="${message}"></p>
+  </div>
+</div>
+
+
+</body>
+</html>
+

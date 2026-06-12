@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add course</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #2ecc71;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h2>Add course</h2>
+
+
+    <form th:action="@{/courses/save}" method="post">
+        <input type="text" name="name" placeholder="Enter course name" required>
+        <button type="submit">Save</button>
+    </form>
+
+
+</div>
+
+
+<!--<a href="/" style="display:block; margin-top:20px;">← Back to Dashboard</a>-->
+</body>
+</html>
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Teachers</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: #3498db;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+
+    .delete {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>teachers</h2>
+
+  <a class="btn" th:href="@{/teachers/add}">+ Add teacher</a>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+
+    <tr th:each="teacher : ${teachers}">
+      <td th:text="${teacher.id}"></td>
+      <td th:text="${teacher.name}"></td>
+      <td>
+        <a class="delete" th:href="@{'/teachers/delete/' + ${teacher.id}}">
+          Delete
+        </a>
+      </td>
+    </tr>
+  </table>
+  <div th:if="${message}" style="color: green;">
+    <p th:text="${message}"></p>
+  </div>
+</div>
+<!--<a href="/" style="display:block; margin-top:20px;">← Back to Dashboard</a>-->
+</body>
+</html>
